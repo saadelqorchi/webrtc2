@@ -22,7 +22,7 @@ class App extends Component {
   componentDidMount = () => {
 
     this.socket = io.connect(
-      'http://scholar.ddns.net:4040/webrtcPeer',
+      'http://167.71.94.165:8080/webrtcPeer',
       {
         path: '/io/webrtc',
         query: {}
@@ -39,7 +39,6 @@ class App extends Component {
       console.log('connection error Le serveur est indisponible',err);
       // navigator.mediaDevices.enumerateDevices().then(devices => 
       //   devices.forEach(device => console.log(device.label)))
-      navigator.mediaDevices.getUserMedia(constraints)
     .then(success)
     .catch(failure)
 
