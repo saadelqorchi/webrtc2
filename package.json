@@ -1,6 +1,6 @@
 {
   "name": "webrtc",
-  "homepage":"http://scholar.ddns.net:4040",
+ "homepage":"http://167.71.94.165:8080/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
