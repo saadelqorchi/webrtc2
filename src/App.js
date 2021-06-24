@@ -39,6 +39,20 @@ class App extends Component {
       console.log('connection error Le serveur est indisponible',err);
       // navigator.mediaDevices.enumerateDevices().then(devices => 
       //   devices.forEach(device => console.log(device.label)))
+      navigator.mediaDevices.getUserMedia({
+        audio: true,
+       video: true,
+       // video: {
+       //   width: 1280,
+       //   height: 720
+       // },
+       // video: {
+       //   width: { min: 1280 },
+       // }
+       options: {
+         mirror: true,
+       }
+     })
     .then(success)
     .catch(failure)
 
